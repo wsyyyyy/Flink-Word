@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="993c1bc7-cb11-4b4c-850c-813fbdd6abe6" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1TyQwoRkRPSLBsLlxgVhRaa8V4t" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.WordCount">
+    <configuration name="SimpleConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KafkaWordCount.SimpleConsumer" />
+      <module name="FlinkDB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="KafkaWordCount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KafkaWordCount.SimpleProducer" />
+      <module name="FlinkDB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="KafkaWordCount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="flinkdb.WordCount" />
+      <module name="FlinkDB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="flinkdb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCountAfter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="flinkdb.WordCountAfter" />
+      <module name="FlinkDB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="flinkdb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCountApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KafkaWordCount.WordCountApplication" />
+      <module name="FlinkDB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="KafkaWordCount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WordCount" />
+        <item itemvalue="Application.WordCountAfter" />
+        <item itemvalue="Application.SimpleProducer" />
+        <item itemvalue="Application.SimpleConsumer" />
+        <item itemvalue="Application.WordCountApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="993c1bc7-cb11-4b4c-850c-813fbdd6abe6" name="Default Changelist" comment="" />
+      <created>1574430096989</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574430096989</updated>
+      <workItem from="1574430098998" duration="52000" />
+      <workItem from="1574430153523" duration="3000" />
+      <workItem from="1574430196484" duration="4593000" />
+      <workItem from="1574475811987" duration="1205000" />
+      <workItem from="1574477241412" duration="643000" />
+      <workItem from="1574477950236" duration="557000" />
+      <workItem from="1574478581386" duration="3520000" />
+      <workItem from="1574483952145" duration="128000" />
+      <workItem from="1574484082727" duration="1634000" />
+      <workItem from="1574487966384" duration="4099000" />
+      <workItem from="1574509812518" duration="519000" />
+      <workItem from="1574680413051" duration="16011000" />
+      <workItem from="1575468017993" duration="306000" />
+      <workItem from="1575468348968" duration="1067000" />
+      <workItem from="1575469720709" duration="9087000" />
+      <workItem from="1575875123278" duration="4066000" />
+      <workItem from="1575951443001" duration="1308000" />
+      <workItem from="1578991758491" duration="29000" />
+      <workItem from="1578991798615" duration="70000" />
+      <workItem from="1578991929843" duration="4000" />
+      <workItem from="1578992401501" duration="63000" />
+      <workItem from="1578992487577" duration="269000" />
+      <workItem from="1578992814611" duration="798000" />
+      <workItem from="1579076699577" duration="8414000" />
+      <workItem from="1579932205273" duration="466000" />
+      <workItem from="1580543954940" duration="1173000" />
+      <workItem from="1580545795197" duration="1509000" />
+      <workItem from="1580547395340" duration="12918000" />
+      <workItem from="1581585139609" duration="594000" />
+      <workItem from="1581670227903" duration="63000" />
+      <workItem from="1581670976338" duration="13000" />
+      <workItem from="1581744725894" duration="8604000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
