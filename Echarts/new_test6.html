@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 1000px;height:600px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+option = {
+    color: ['#003366', '#006699', '#4cabce', '#FFCC99','#6699CC','#99CC33','#CCCCCC','#99CCCC','#6666CC','#CCCCFF'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    legend: {
+        data: ['people', 'make', 'years', 'world', 'life','learn','social','information','high','children']
+    },
+    toolbox: {
+        show: true,
+        orient: 'vertical',
+        left: 'right',
+        top: 'center',
+        feature: {
+            mark: {show: true},
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+        title: {
+        text: '2014上-2019上六级热门单词频率变化图',
+        left:'center',
+        top:'bottom',
+        textStyle:
+            {   fontStyle:'normal',
+                fontSize:'30'
+            }
+    },
+    xAxis: [
+        {
+            type: 'category',
+            axisTick: {show: false},
+            data: ['2014上', '2014下', '2015上', '2016上', '2016下','2017上','2017下','2018上','2018下','2019上']
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value'
+        }
+    ],
+    series: [
+        {
+            name: 'people',
+            type: 'bar',
+            barGap: 0,
+            
+            data: [18,28,13,11,28,49,36,62,36,27,27]
+        },
+        {
+           name: 'make',
+            type: 'bar',
+
+            data: [8,12,14,13,17,26,16,54,22,12,7]
+        },
+        {
+            name: 'years',
+            type: 'bar',
+    
+            data: [18,11,16,14,22,45,20,47,16,19,18]
+        },
+        {
+           name: 'world',
+            type: 'bar',
+       
+           data: [8,13,13,5,25,26,12,29,9,2,9]
+        },
+         {
+             name: 'life',
+            type: 'bar',
+            barGap: 0,
+      
+            data: [12,11,21,17,9,31,9,27,9,9,4]
+        },
+        {
+            name: 'learn',
+            type: 'bar',
+       
+           data: [20,15,8,8,6,8,6,15,19,20,11]
+        },
+        {
+           name: 'social',
+            type: 'bar',
+       
+           data: [2,23,12,8,0,33,8,11,20,12,1]
+        },
+        {
+           name: 'information',
+            type: 'bar',
+       
+          data: [11,8,3,10,2,10,5,12,15,16,2]
+        },
+        {
+            name: 'high',
+            type: 'bar',
+       
+          data: [7,17,7,25,11,23,16,21,10,12,6]
+        },
+        {
+            name: 'children',
+            type: 'bar',
+       
+          data: [18,12,2,13,0,6,5,23,10,26,2]
+        },
+    ]
+};
+  // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
