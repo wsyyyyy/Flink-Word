@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993c1bc7-cb11-4b4c-850c-813fbdd6abe6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/flinkdb/PaperCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flinkdb/PaperCreate.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -179,7 +177,7 @@
       <workItem from="1581585139609" duration="594000" />
       <workItem from="1581670227903" duration="63000" />
       <workItem from="1581670976338" duration="13000" />
-      <workItem from="1581744725894" duration="27033000" />
+      <workItem from="1581744725894" duration="27336000" />
     </task>
     <servers />
   </component>

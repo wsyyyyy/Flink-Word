@@ -202,44 +202,9 @@ public class PaperCreate {
     public static final class WordSplitter implements FlatMapFunction<Tuple2<String, Integer>, String> {
         @Override
         public void flatMap(Tuple2<String, Integer> value, Collector<String> out) {
-            String tokens = value.f0;
+            //String tokens = value.f0;
             /*for (String token : tokens) {
                 System.out.println(token);
-            }*/
-            //读文件，将文件中的数据存放到一个字符串中
-            /*String filePath = "/Users/sub/Desktop/Flink/四六级词频实验/2013-2019六级/2019年6月1.txt";
-            BufferedReader br = null;
-            BufferedWriter bw = null;
-            try {
-                //定义一个字符串用于接收读取的数据
-                StringBuffer sb = new StringBuffer();
-                //获得输入流对象，可以读取文件
-                br = new BufferedReader(new FileReader(filePath));
-                String line;
-                //循环逐行读取数据
-                while(null != (line = br.readLine())){
-                    sb.append(line + "\n");
-                }
-                String s = sb.toString();
-                s = s.replaceAll(value.getField(0), "_____");
-                System.out.println(s);
-                //创建一个输出流对象
-                bw = new BufferedWriter(new FileWriter("/Users/sub/Desktop/试卷test3.txt "));
-                bw.write(s);
-                bw.flush();
-            }catch(Exception e) {
-                e.printStackTrace();
-            }finally{
-                try {
-                    if(null != br){
-                        br.close();
-                    }
-                    if(null != bw){
-                        bw.close();
-                    }
-                }catch(IOException e) {
-                    e.printStackTrace();
-                }
             }*/
             // emit the words
                     out.collect(value.getField(0));
