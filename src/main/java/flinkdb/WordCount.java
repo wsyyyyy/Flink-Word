@@ -65,11 +65,12 @@ public class WordCount {
                         // group by the tuple field "0" and sum up tuple field "1"
                         .groupBy(0)
                         .sum(1)
-                        .sortPartition(1, Order.DESCENDING).setParallelism(1)
+                        .sortPartition(0, Order.ASCENDING).setParallelism(1)
                 ;
         long s3 = System.currentTimeMillis();
         // execute and print result
-        counts.writeAsText("/Users/sub/Desktop/Flink/四六级词频实验/六级词频/2013-2019六级总词频.txt ").setParallelism(1);
+        //counts.writeAsText("/Users/sub/Desktop/Flink/四六级词频实验/六级词频/2013-2019六级总词频.txt ").setParallelism(1);
+        counts.writeAsCsv("/Users/sub/Desktop/2013-2019六级总词频.csv ").setParallelism(1);
         counts.print();
         long s4 = System.currentTimeMillis();
         System.out.println("读取文件时间："+(s3-s2)+"ms");
