@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993c1bc7-cb11-4b4c-850c-813fbdd6abe6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/WordNLP/Tagger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WordNLP/StanfordCoreNlpDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flinkdb/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flinkdb/WordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate$WordSplitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate$WordSplitter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCount$LineSplitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCount$LineSplitter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCount.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,11 +30,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="userSettingsFile" value="$USER_HOME$/Downloads/apache-maven-3.6.2/conf/settings.xml" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -54,10 +45,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="sshConsole" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -71,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Tagger">
+  <component name="RunManager" selected="Application.StanfordCoreNlpDemo">
     <configuration name="PaperCreate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="flinkdb.PaperCreate" />
       <module name="FlinkDB" />
@@ -85,12 +76,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KafkaWordCount.SimpleProducer" />
+    <configuration name="StanfordCoreNlpDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WordNLP.StanfordCoreNlpDemo" />
       <module name="FlinkDB" />
+      <option name="VM_PARAMETERS" value="-Xms512M -Xmx4096M" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="KafkaWordCount.*" />
+          <option name="PATTERN" value="WordNLP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,6 +93,7 @@
     <configuration name="Tagger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WordNLP.Tagger" />
       <module name="FlinkDB" />
+      <option name="VM_PARAMETERS" value="-Xms2048M -Xmx4096M" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="WordNLP.*" />
@@ -137,13 +130,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.PaperCreate" />
+      <item itemvalue="Application.StanfordCoreNlpDemo" />
+      <item itemvalue="Application.Tagger" />
+      <item itemvalue="Application.WordCount" />
+      <item itemvalue="Application.WordCountAfter" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StanfordCoreNlpDemo" />
         <item itemvalue="Application.Tagger" />
         <item itemvalue="Application.WordCount" />
         <item itemvalue="Application.PaperCreate" />
         <item itemvalue="Application.WordCountAfter" />
-        <item itemvalue="Application.SimpleProducer" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +197,11 @@
       <workItem from="1583052018121" duration="2013000" />
       <workItem from="1583057475185" duration="2810000" />
       <workItem from="1583071247122" duration="210000" />
-      <workItem from="1583071504526" duration="103000" />
+      <workItem from="1583071504526" duration="1242000" />
+      <workItem from="1583115743305" duration="2120000" />
+      <workItem from="1583128876054" duration="1275000" />
+      <workItem from="1583143806449" duration="2249000" />
+      <workItem from="1583155005209" duration="3331000" />
     </task>
     <servers />
   </component>
