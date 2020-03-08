@@ -84,51 +84,49 @@ public class PaperCreate {
         System.out.println("总时间："+(s4-s2)+"ms");
 
         //读文件，将文件中的数据存放到一个字符串中
-            String filePath1 = "/Users/sub/Desktop/Flink/四六级词频实验/2013-2019六级/2019年6月1.txt";
-            String filePath2 = "/Users/sub/Desktop/word.txt";
-            BufferedReader br = null;
-            BufferedReader br1 = null;
-            BufferedWriter bw = null;
-            try {
-                //定义一个字符串用于接收读取的数据
-                StringBuffer sb = new StringBuffer();
-                //获得输入流对象，可以读取文件
-                br = new BufferedReader(new FileReader(filePath1));
-                br1 = new BufferedReader(new FileReader(filePath2));
-                String line;
-                String W;
-                //循环逐行读取数据
-                while(null != (line = br.readLine())){
-                    sb.append(line).append("\n");
-                }
-                String s = sb.toString();
-                while(null != (W = br1.readLine())){
-                    s = s.replaceAll("[^a-zA-Z]"+W+"[^a-zA-Z]", " ___(Q)___ ");
-                }
-                System.out.println(s);
-                //创建一个输出流对象
-                bw = new BufferedWriter(new FileWriter("/Users/sub/Desktop/试卷test3.txt "));
-                bw.write(s);
-                bw.flush();
-            }catch(Exception e) {
-                e.printStackTrace();
-            }finally{
-                try {
-                    if(null != br){
-                        br.close();
-                    }
-                    if(null != br1){
-                        br1.close();
-                    }
-                    if(null != bw){
-                        bw.close();
-                    }
-                }catch(IOException e) {
-                    e.printStackTrace();
-                }
+        String filePath1 = "/Users/sub/Desktop/Flink/四六级词频实验/2013-2019六级/2019年6月 阅读1.txt";
+        String filePath2 = "/Users/sub/Desktop/word.txt";
+        BufferedReader br = null;
+        BufferedReader br1 = null;
+        BufferedWriter bw = null;
+        try {
+            //定义一个字符串用于接收读取的数据
+            StringBuffer sb = new StringBuffer();
+            //获得输入流对象，可以读取文件
+            br = new BufferedReader(new FileReader(filePath1));
+            br1 = new BufferedReader(new FileReader(filePath2));
+            String line;
+            String W;
+            //循环逐行读取数据
+            while(null != (line = br.readLine())){
+                sb.append(line).append("\n");
             }
-
-
+            String s = sb.toString();
+            while(null != (W = br1.readLine())){
+                s = s.replaceAll("[^a-zA-Z]"+W+"[^a-zA-Z]", " ___(Q)___ ");
+            }
+            System.out.println(s);
+            //创建一个输出流对象
+            bw = new BufferedWriter(new FileWriter("/Users/sub/Desktop/试卷test.txt "));
+            bw.write(s);
+            bw.flush();
+        }catch(Exception e) {
+            e.printStackTrace();
+        }finally{
+            try {
+                if(null != br){
+                    br.close();
+                }
+                if(null != br1){
+                    br1.close();
+                }
+                if(null != bw){
+                    bw.close();
+                }
+            }catch(IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     //

@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993c1bc7-cb11-4b4c-850c-813fbdd6abe6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/WordNLP/StanfordCoreNlpDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/flinkdb/WordCountRate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flinkdb/PaperCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flinkdb/PaperCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flinkdb/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flinkdb/WordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WordNLP/Tagger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate$LineSplitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate$LineSplitter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate$WordSplitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate$WordSplitter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCount$LineSplitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCount$LineSplitter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCount.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="sshConsole" />
@@ -62,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StanfordCoreNlpDemo">
+  <component name="RunManager" selected="Application.WordCountRate">
     <configuration name="PaperCreate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="flinkdb.PaperCreate" />
       <module name="FlinkDB" />
@@ -117,8 +124,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCountAfter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="flinkdb.WordCountAfter" />
+    <configuration name="WordCountRate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="flinkdb.WordCountRate" />
       <module name="FlinkDB" />
       <extension name="coverage">
         <pattern>
@@ -135,15 +142,15 @@
       <item itemvalue="Application.StanfordCoreNlpDemo" />
       <item itemvalue="Application.Tagger" />
       <item itemvalue="Application.WordCount" />
-      <item itemvalue="Application.WordCountAfter" />
+      <item itemvalue="Application.WordCountRate" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StanfordCoreNlpDemo" />
-        <item itemvalue="Application.Tagger" />
+        <item itemvalue="Application.WordCountRate" />
         <item itemvalue="Application.WordCount" />
+        <item itemvalue="Application.StanfordCoreNlpDemo" />
         <item itemvalue="Application.PaperCreate" />
-        <item itemvalue="Application.WordCountAfter" />
+        <item itemvalue="Application.Tagger" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +208,7 @@
       <workItem from="1583115743305" duration="2120000" />
       <workItem from="1583128876054" duration="1275000" />
       <workItem from="1583143806449" duration="2249000" />
-      <workItem from="1583155005209" duration="3331000" />
+      <workItem from="1583155005209" duration="14925000" />
     </task>
     <servers />
   </component>
