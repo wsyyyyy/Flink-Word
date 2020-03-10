@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993c1bc7-cb11-4b4c-850c-813fbdd6abe6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/flinkdb/WordCountRate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/flinkdb/FlinkNLP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flinkdb/PaperCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flinkdb/PaperCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flinkdb/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flinkdb/WordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WordNLP/Tagger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate$LineSplitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate$LineSplitter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate$WordSplitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate$WordSplitter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/PaperCreate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCount$LineSplitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCount$LineSplitter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flinkdb/WordCountRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flinkdb/WordCountRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCountRate$Rate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCountRate$Rate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCountRate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCountRate.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +64,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WordCountRate">
+  <component name="RunManager" selected="Application.FlinkNLP">
+    <configuration name="FlinkNLP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="flinkdb.FlinkNLP" />
+      <module name="FlinkDB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="flinkdb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PaperCreate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="flinkdb.PaperCreate" />
       <module name="FlinkDB" />
@@ -87,20 +95,6 @@
       <option name="MAIN_CLASS_NAME" value="WordNLP.StanfordCoreNlpDemo" />
       <module name="FlinkDB" />
       <option name="VM_PARAMETERS" value="-Xms512M -Xmx4096M" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="WordNLP.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tagger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WordNLP.Tagger" />
-      <module name="FlinkDB" />
-      <option name="VM_PARAMETERS" value="-Xms2048M -Xmx4096M" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="WordNLP.*" />
@@ -140,17 +134,17 @@
     <list>
       <item itemvalue="Application.PaperCreate" />
       <item itemvalue="Application.StanfordCoreNlpDemo" />
-      <item itemvalue="Application.Tagger" />
       <item itemvalue="Application.WordCount" />
       <item itemvalue="Application.WordCountRate" />
+      <item itemvalue="Application.FlinkNLP" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FlinkNLP" />
         <item itemvalue="Application.WordCountRate" />
         <item itemvalue="Application.WordCount" />
         <item itemvalue="Application.StanfordCoreNlpDemo" />
         <item itemvalue="Application.PaperCreate" />
-        <item itemvalue="Application.Tagger" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +202,7 @@
       <workItem from="1583115743305" duration="2120000" />
       <workItem from="1583128876054" duration="1275000" />
       <workItem from="1583143806449" duration="2249000" />
-      <workItem from="1583155005209" duration="14925000" />
+      <workItem from="1583155005209" duration="33421000" />
     </task>
     <servers />
   </component>
