@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993c1bc7-cb11-4b4c-850c-813fbdd6abe6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Echarts/4级写作.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Echarts/4级听力.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Echarts/4级总话题.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Echarts/4级阅读.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Echarts/6级写作.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Echarts/6级听力.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Echarts/6级总话题.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Echarts/6级阅读.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Echarts/masterfrequency.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Echarts/mastertest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Echarts/flink-efficiency.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Echarts/new_test4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Echarts/new_test4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Echarts/new_test6.html" beforeDir="false" afterPath="$PROJECT_DIR$/Echarts/new_test6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flinkdb/FlinkNLP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flinkdb/FlinkNLP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flinkdb/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flinkdb/WordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flinkdb/WordCountRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flinkdb/WordCountRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/FlinkNLP$WordNLP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/FlinkNLP$WordNLP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/FlinkNLP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/FlinkNLP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCount$LineSplitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCount$LineSplitter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCountRate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCountRate.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -236,7 +217,7 @@
       <workItem from="1587394197911" duration="473000" />
       <workItem from="1587717753359" duration="1446000" />
       <workItem from="1589263465250" duration="9413000" />
-      <workItem from="1589512517765" duration="7815000" />
+      <workItem from="1589512517765" duration="8136000" />
     </task>
     <servers />
   </component>
