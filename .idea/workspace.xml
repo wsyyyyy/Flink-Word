@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993c1bc7-cb11-4b4c-850c-813fbdd6abe6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/flinkdb/FlinkNLP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Echarts/4级写作.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Echarts/4级听力.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Echarts/4级总话题.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Echarts/4级阅读.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Echarts/6级写作.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Echarts/6级听力.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Echarts/6级总话题.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Echarts/6级阅读.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Echarts/masterfrequency.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Echarts/mastertest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Echarts/new_test4.html" beforeDir="false" afterPath="$PROJECT_DIR$/Echarts/new_test4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Echarts/new_test6.html" beforeDir="false" afterPath="$PROJECT_DIR$/Echarts/new_test6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flinkdb/FlinkNLP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flinkdb/FlinkNLP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flinkdb/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flinkdb/WordCount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/flinkdb/WordCountRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flinkdb/WordCountRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCountRate$Rate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCountRate$Rate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/FlinkNLP$WordNLP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/FlinkNLP$WordNLP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/FlinkNLP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/FlinkNLP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCount$LineSplitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCount$LineSplitter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCount.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/flinkdb/WordCountRate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/flinkdb/WordCountRate.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,6 +41,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -44,13 +61,23 @@
   <component name="ProjectId" id="1TyQwoRkRPSLBsLlxgVhRaa8V4t" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Echarts" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="sshConsole" />
+  </component>
+  <component name="RecentsManager">
+    <key name="OPEN_URL_DIALOG">
+      <recent name="https://github.com/stanfordnlp/CoreNLP.git" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Echarts" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -64,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FlinkNLP">
+  <component name="RunManager" selected="Application.WordCount">
     <configuration name="FlinkNLP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="flinkdb.FlinkNLP" />
       <module name="FlinkDB" />
@@ -140,9 +167,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WordCount" />
         <item itemvalue="Application.FlinkNLP" />
         <item itemvalue="Application.WordCountRate" />
-        <item itemvalue="Application.WordCount" />
         <item itemvalue="Application.StanfordCoreNlpDemo" />
         <item itemvalue="Application.PaperCreate" />
       </list>
@@ -202,7 +229,14 @@
       <workItem from="1583115743305" duration="2120000" />
       <workItem from="1583128876054" duration="1275000" />
       <workItem from="1583143806449" duration="2249000" />
-      <workItem from="1583155005209" duration="33421000" />
+      <workItem from="1583155005209" duration="37078000" />
+      <workItem from="1584457959273" duration="14632000" />
+      <workItem from="1586660914991" duration="352000" />
+      <workItem from="1587287371544" duration="734000" />
+      <workItem from="1587394197911" duration="473000" />
+      <workItem from="1587717753359" duration="1446000" />
+      <workItem from="1589263465250" duration="9413000" />
+      <workItem from="1589512517765" duration="7815000" />
     </task>
     <servers />
   </component>

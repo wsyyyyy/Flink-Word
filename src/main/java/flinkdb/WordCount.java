@@ -54,7 +54,7 @@ public class WordCount {
                 env.createInput(hdIf);
         */
         long s1 = System.currentTimeMillis();
-        String filePath = "/Users/sub/Desktop/Flink/考研词频实验/2013-2019英一/2013-2019英一.txt";
+        String filePath = "/Users/sub/Desktop/Flink/四六级词频实验/2010-2019四级/2019年四级.txt";
         //String filePath = "/Users/sub/Desktop/120万单词.txt";
         //DataSet<String> text = env.readTextFile(String.valueOf(input));
         DataSet<String> text = env.readTextFile(filePath);
@@ -66,10 +66,12 @@ public class WordCount {
                         .groupBy(0)
                         .sum(1)
                         .sortPartition(1, Order.DESCENDING).setParallelism(1)
+                        .filter(keyValue -> keyValue.getField(1).toString().equals("3")
+                                || keyValue.getField(1).toString().equals("2"))
                 ;
         long s3 = System.currentTimeMillis();
         // execute and print result
-        counts.writeAsText("/Users/sub/Desktop/Flink/考研词频实验/考研词频统计/2013-2019英一词频.txt ").setParallelism(1);
+        counts.writeAsText("/Users/sub/Desktop/Flink/四六级词频实验/四级词频/2019年四级词频.txt ").setParallelism(1);
         //counts.writeAsCsv("/Users/sub/Desktop/2013-2019六级总词频.csv ").setParallelism(1);
         //counts.writeAsText("/Users/sub/Desktop/词频.txt ").setParallelism(1);
         counts.print();

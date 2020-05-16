@@ -58,16 +58,16 @@ public class WordCountRate {
                 env.createInput(hdIf);
         */
         long s1 = System.currentTimeMillis();
-        String filePath = "/Users/sub/Desktop/Flink/考研词频实验/2013-2019英一/2013英一.txt";
+        String filePath = "/Users/sub/Desktop/Flink/考研词频实验/2013-2019英一/2013-2019英一.txt";
         //String filePath = "/Users/sub/Desktop/120万单词.txt";
         //DataSet<String> text = env.readTextFile(String.valueOf(input));
         DataSet<String> text = env.readTextFile(filePath);
         long s2 = System.currentTimeMillis();
         DataSet<Tuple1<Long>> counts = text.flatMap(new LineSplitter()).sum(0);
-        counts.writeAsText("/Users/sub/Desktop/w13.txt").setParallelism(1);
-        //counts.print();
+        //counts.writeAsText("/Users/sub/Desktop/wordsummaster.txt").setParallelism(1);
+        counts.print();
 
-        String filePath1 = "/Users/sub/Desktop/w13.txt";
+        String filePath1 = "/Users/sub/Desktop/wordsummaster.txt";
         BufferedReader br = null;
         try {
             //获得输入流对象，可以读取文件

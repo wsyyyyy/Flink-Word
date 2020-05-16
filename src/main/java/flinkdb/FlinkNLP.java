@@ -186,8 +186,8 @@ public class FlinkNLP {
         final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
         // get input data
         long s1 = System.currentTimeMillis();
-        String filePath = "/Users/sub/Desktop/Flink/四六级词频实验/2013-2019六级/2013-2019六级.txt";
-        //String filePath = "/Users/sub/Desktop/120万单词.txt";
+        String filePath = "/Users/sub/Desktop/Flink/考研词频实验/2013-2019英一/2013-2019英一.txt";
+        //String filePath = "/Users/sub/Desktop/timemaster.txt";
         DataSet<String> text = env.readTextFile(filePath);
         long s2 = System.currentTimeMillis();
         DataSet<Tuple4<String,Integer,String,String>> result = text.flatMap(new WordNLP())
@@ -195,7 +195,7 @@ public class FlinkNLP {
                 .sum(1)
                 .sortPartition(0, Order.ASCENDING)
                 .setParallelism(1);
-        result.writeAsText("/Users/sub/Desktop/time.txt").setParallelism(1);
+        //result.writeAsText("/Users/sub/Desktop/timemastersum.txt").setParallelism(1);
         result.print();
     }
     
@@ -203,12 +203,13 @@ public class FlinkNLP {
         @Override
         public void flatMap(String value, Collector<Tuple4<String, Integer, String, String>> out) throws Exception {
             String[] tokens = value.toLowerCase().split("\\W+");
-            int i,j,flag=0;
+            int i,j,flag;
             Properties props = new Properties();  // set up pipeline properties
             props.put("annotators", "tokenize, ssplit, pos, lemma");   //分词、分句、词性标注和次元信息。
             StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
             for(i=1;i<tokens.length-1;i++){
                 String txtWords; // 待处理文本
+                flag=0;
                 if(tokens[i].equals("times")){
                     String POS = "";
                     String POS1 = "";
@@ -298,10 +299,19 @@ public class FlinkNLP {
                                     POS1 ="连词";
                                     Meaning = "时间";
                                 }
-                                else if(pos.equals("JJ")|| pos.equals("JJR")||pos.equals("VBG")
-                                        &&!word.equals("first")&&!word.equals("second")&&!word.equals("third")){
+                                else if(pos.equals("WDT")){
+                                    POS1 ="疑问词";
+                                    Meaning = "时间";
+                                }
+                                else if((pos.equals("JJ")|| pos.equals("JJR")||pos.equals("VBG"))
+                                        &&!word.equals("first")&&!word.equals("second")&&!word.equals("third")
+                                        &&!word.equals("last")){
                                     POS1 ="形容词";
                                     Meaning = "时间";
+                                }
+                                else if(word.equals("last")){
+                                    POS1 = "形容词";
+                                    Meaning = "次数";
                                 }
                                 else if(word.equals("first")||word.equals("second")||word.equals("third")){
                                     POS1 = "序数词";

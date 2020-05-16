@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="width: 1000px;height:600px;"></div>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+    option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            }
+        },
+        legend: {
+            data: ['教育', '文化', '经济', '科技','社会/生活','环境']
+        },
+        toolbox: {
+            show: true,
+            orient: 'vertical',
+            left: 'right',
+            top: 'center',
+            feature: {
+                mark: {show: true},
+                dataView: {show: true, readOnly: false},
+                magicType: {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                restore: {show: true},
+                saveAsImage: {show: true}
+            }
+        },
+        title: {
+            text: '2010-2019年六级听力话题统计',
+            left:'center',
+            top:'bottom',
+            textStyle:
+                {   fontStyle:'normal',
+                    fontSize:'20'
+                }
+        },
+        xAxis: {
+            type: 'value'
+        },
+        yAxis: {
+            type: 'category',
+            data: ['2010', '2011', '2012', '2013', '2014', '2015', '2016','2017','2018','2019']
+        },
+        series: [
+            {
+                name: '教育',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    //show: true,
+                    position: 'insideRight'
+                },
+                data: [4, 3, 4, 5, 5, 1, 1, 4, 4, 4]
+            },
+            {
+                name: '文化',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    //show: true,
+                    position: 'insideRight'
+                },
+                data: [2, 2, 3, 2, 2, 2, 2, 6, 4, 4]
+            },
+            {
+                name: '经济',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    //show: true,
+                    position: 'insideRight'
+                },
+                data: [2, 7, 4, 4, 4, 9, 6, 9, 4, 3]
+            },
+            {
+                name: '科技',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    //show: true,
+                    position: 'insideRight'
+                },
+                data: [6, 10, 7, 5, 6, 9, 4, 5, 10, 11]
+            },
+            {
+                name: '社会/生活',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    //show: true,
+                    position: 'insideRight'
+                },
+                data: [4, 8, 7, 5, 7, 6, 7, 11, 7, 6]
+            },
+            {
+                name: '环境',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                    //show: true,
+                    position: 'insideRight'
+                },
+                data: [3, 2, 1, 1, 0, 1, 5, 4, 4, 2]
+            }
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+</body>
+</html>

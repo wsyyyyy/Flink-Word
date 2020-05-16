@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="width: 1000px;height:600px;"></div>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: '2014上-2019上六级热门单词频率变化图',
+            left:'center',
+            top:'bottom',
+            textStyle:
+                {   fontStyle:'normal',
+                    fontSize:'30'
+                }
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['have', 'people', 'social', 'new', 'state','use','only','world','make','science']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '10%',
+            containLabel: true
+        },
+
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['2013', '2014', '2015', '2016', '2017','2018','2019']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name: 'have',
+                type: 'line',
+
+                data: [19,20,15,21,9,16,21]
+            },
+            {
+                name: 'people',
+                type: 'line',
+
+                data: [8,8,6,8,12,9,11]
+            },
+            {
+                name: 'social',
+                type: 'line',
+
+                data: [22,6,5,4,5,10,1]
+            },
+            {
+                name: 'new',
+                type: 'line',
+
+                data: [3,7,6,12,5,14,12,4]
+            },
+            {
+                name: 'state',
+                type: 'line',
+
+                data: [14,4,4,1,1,9,9,14]
+            },
+            {
+                name: 'use',
+                type: 'line',
+
+                data: [5,8,3,7,5,7,10]
+            },
+            {
+                name: 'only',
+                type: 'line',
+
+                data: [7,8,4,9,4,3,9]
+            },
+            {
+                name: 'world',
+                type: 'line',
+
+                data: [10,1,8,2,10,1,2]
+            },
+            {
+                name: 'make',
+                type: 'line',
+
+                data: [5,3,4,14,1,1,5]
+            },
+            {
+                name: 'science',
+                type: 'line',
+
+                data: [9,4,10,0,2,0,8]
+            }
+        ]
+    };
+
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+</body>
+</html>

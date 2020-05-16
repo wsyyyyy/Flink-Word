@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="width: 1000px;height:600px;"></div>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+    option = {
+        color: ['#003366', '#006699', '#4cabce', '#FFCC99','#6699CC','#99CC33','#CCCCCC','#99CCCC','#6666CC','#CCCCFF'],
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        legend: {
+            data: ['have', 'state', 'people', 'world','all','social','new','report','science','law']
+        },
+        toolbox: {
+            show: true,
+            orient: 'vertical',
+            left: 'right',
+            top: 'center',
+            feature: {
+                mark: {show: true},
+                dataView: {show: true, readOnly: false},
+                magicType: {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                restore: {show: true},
+                saveAsImage: {show: true}
+            }
+        },
+        title: {
+            text: '2013-2019考研英一热门单词词频统计图',
+            left:'center',
+            top:'bottom',
+            textStyle:
+                {   fontStyle:'normal',
+                    fontSize:'30'
+                }
+        },
+        xAxis: [
+            {
+                type: 'category',
+                axisTick: {show: false},
+                data: ['2013', '2014', '2015', '2016', '2017','2018','2019']
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: 'have',
+                type: 'bar',
+                barGap: 0,
+
+                data: [19,20,15,21,9,16,21]
+            },
+            {
+                name: 'state',
+                type: 'bar',
+
+                data: [14,4,4,1,1,9,14]
+            },
+            {
+                name: 'people',
+                type: 'bar',
+                barGap: 0,
+
+                data: [8,8,6,8,12,9,11]
+            },
+            {
+                name: 'world',
+                type: 'bar',
+
+                data: [10,1,8,2,10,1,2]
+            },
+            {
+                name: 'all',
+                type: 'bar',
+
+                data: [17,9,6,9,8,10,9]
+            },
+            {
+                name: 'social',
+                type: 'bar',
+
+                data: [22,6,5,4,5,10,1]
+            },
+            {
+                name: 'new',
+                type: 'bar',
+
+                data: [3,7,6,12,5,14,4]
+            },
+            {
+                name: 'report',
+                type: 'bar',
+
+                data: [1,13,1,0,2,3,0]
+            },
+            {
+                name: 'science',
+                type: 'bar',
+
+                data: [9,4,10,0,2,0,8]
+            },
+            {
+                name: 'law',
+                type: 'bar',
+
+                data: [6,14,1,4,1,0,3]
+            },
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+</body>
+</html>
